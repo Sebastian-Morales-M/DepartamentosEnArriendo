@@ -1,3 +1,3 @@
 # Departamentos_En_Arriendo
-Power BI que muestra los avisos de departamentos en arriendo del portal inmobiliario.
+Análisis de avisos inmobiliarios relevantes ubicados en la ciudad de Santiago. La metodología de trabajo incluye web scrapping utilizando la aplicación Octoparse y la posterior elaboración y análisis de la base de datos utilizando técnicas de data analytics y businesses intelligence mediante los softwares Microsoft Excel y Power BI
 
