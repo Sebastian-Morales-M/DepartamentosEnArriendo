@@ -1,0 +1,14 @@
+La base de datos se creó haciendo un scraping de los avisos de arriendo de la pagina del portal inmobiliario filtrando por los más relevantes, dando como resultado 40 paginas con información.
+Con el programa Octoparse se seleccionó la información requerida para la base de datos, se eliminaron los duplicados y se exportó el resultado a un Excel.
+Una vez en Excel, se cambiaron los formatos y se hizo la limpieza de la base de datos. 
+Se eliminaron los siguientes registros:
+- Comunas que no pertenecían a Santiago
+- Avisos que no especificaban cantidad de dormitorios o metros cuadrados
+- Arriendos correspondientes a oficinas
+Una vez concluida la limpieza, se exporta el Excel a Power BI y se crea un dashboard que contiene el promedio de precios por comuna, el valor máximo y mínimo que se encontró en los avisos, cantidad de dormitorios, el top 5 de comunas con más registros, promedio y suma total de metros cuadrados por comuna y filtro por rango de precios.
+De este proyecto, en rangos generales se puede concluir lo siguiente:
+- Las comunas con más registros son Estación Central, La Florida, Santiago, Las Condes y La Cisterna
+- Los departamentos en arriendo contienen de 1 a 4 dormitorios, siendo los avisos con dos dormitorios el que cuenta con más registros
+- El promedio de arriendos más altos se encuentra en el sector oriente de Santiago
+- A medida que aumentan los dormitorios, el precio se eleva exponencialmente cuando se ve el promedio de todo Santiago, pero si se revisa solo por comuna, tiene un comportamiento más lineal. Esto se debe a que las comunas que contienen los valores promedio más altos de arriendo (Vitacura, Huechuraba, Lo Barnechea, Las condes y Providencia) conforman la mayoría de los avisos de 3 y 4 dormitorios (79 registros de 115) lo que eleva el valor promedio por comuna cuando se calcula por cantidad de dormitorios.
+- Los avisos del sector oriente de Santiago cuentan en promedio con el doble de metros cuadrados comparados con el resto de comunas.
